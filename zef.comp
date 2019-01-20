@@ -1,0 +1,53 @@
+CompleteShell v0.2
+
+N zef v0.0.1 ..'Perl6 Module Management'
+
+O --install-to =name      .."Short name or spec of CompUnit::Repository to install to"
+O --config-path =file     .."Load a specific Zef config file"
+O --fetch-timeout =int    .."Set a timeout (in seconds) for phase fetch"
+O --extract-timeout =int  .."Set a timeout (in seconds) for phase extract"
+O --build-timeout =int    .."Set a timeout (in seconds) for phase build"
+O --test-timeout =int     .."Set a timeout (in seconds) for phase test"
+O --install-timeout =int  .."Set a timeout (in seconds) for phase install"
+O --update                .."Force a refresh for all module indexes"
+O --update =ecosystem     .."Force a refresh for a specific ecosystem module index"
+O --/update               .."Skip refreshing all module indexes"
+O --/update =ecosystem    .."Skip refreshing for a specific ecosystem module index"
+O --error
+O --warn
+O --info                  ..'(default message level)'
+O --verbose
+O --debug
+O --deps-only             .."Install only the dependency chains"
+O --dry                   .."Run all phases except the actual installations"
+O --serial                .."Install each dependency after test and before build"
+O --contained             .."Install all transitive and direct dependencies regardless"
+O --/test                 .."Skip the testing phase"
+O --/build                .."Skip the building phase"
+O --/depends              .."Do not fetch runtime dependencies"
+O --/test-depends         .."Do not fetch test dependencies"
+O --/build-depends        .."Do not fetch build dependencies"
+O --force-resolve
+O --force-fetch
+O --force-extract
+O --force-build
+O --force-test
+O --force-install
+
+C install   +module...    .."Install specific dependencies by name or path"
+C uninstall +module...    .."Uninstall specified distributions"
+C test      +module...    .."Run tests on a given module's path"
+C fetch     +module...    .."Fetch and extract module's source"
+C build     +module...    .."Run the Build.pm in a given module's path"
+C look      +module...    .."Fetch followed by shelling into the module's path"
+C update    +module...    .."Update package indexes for repositories"
+C upgrade   +module...    .."Upgrade specific distributions (or all if no arguments)"
+C search    +module...    .."Show a list of possible distribution candidates for the given terms"
+C info      +module...    .."Show detailed distribution information"
+C browse    +module...    .."Open browser to various support urls (homepage, bugtracker, source)"
+C list      +module...    .."List known available distributions, or installed distributions with '--installed'"
+C depends   +module...    .."List all direct and transitive dependencies for a given identity"
+C rdepends  +module...    .."List all distributions directly depending on a given identity"
+C locate    +module...    .."Lookup installed module information by short-name, name-path, or sha1 (with --sha1 flag)"
+C smoke     +module...    .."Run smoke testing on available modules"
+C nuke      +module...    .."Delete directory/prefix containing matching configuration path or CURLI name"
