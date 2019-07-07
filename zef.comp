@@ -1,6 +1,7 @@
 CompleteShell v0.2
 
 N zef v0.0.1 ..'Perl6 Module Management'
+M tags perl perl6
 
 O --install-to =name      .."Short name or spec of CompUnit::Repository to install to"
 O --config-path =file     .."Load a specific Zef config file"
